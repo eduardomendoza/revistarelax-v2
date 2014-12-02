@@ -38,7 +38,7 @@
 				<span>Una Publicación más de Atenea Pharma</span>
 			</a>
 			<span class="right_ab">
-				Para continuar, es necesario<strong><a href="#">Registrarse</a></strong>El Médico Profesionista podrá consultar información exclusiva e información de eventos y congresos.
+				Para continuar, es necesario<strong><a href="#">Registrarse</a></strong>El Médico Profesionista podrá consultar información exclusiva sobre eventos, congresos y entrevistas.
 			</span>
 		</div>
 						<!--LOGIN-->
@@ -75,7 +75,7 @@
 						<div class="va-content">
 							<p>Acceso Suscriptores</p>
 							<ul>						
-								<li id="toggle-login"><a href="medico">Entrar</a></li>
+								<li id="toggle-login"><a href="#">Entrar</a></li>
 								<li><a href="registro-revista-relax.html">Registrarse</a></li>
 								<li><a href="#">¿Por qué registrarme?</a></li>
 							</ul>
@@ -86,11 +86,11 @@
 					</div>
 
 					<div class="va-slice va-slice-2">
-						<h3 class="va-title">Versión para el Paciente</h3>
+						<h3 class="va-title">Versión para Público</h3>
 						<div class="va-content">
 							<p>Acceso Público</p>
 							<ul>
-								<li><a href="http://www.revistarelax.com/v1/">Entrar</a></li>
+								<li><a href="#">Entrar</a></li>
 							</ul>
 						</div>	
 					</div>			
