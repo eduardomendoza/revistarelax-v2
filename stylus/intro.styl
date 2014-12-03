@@ -228,14 +228,42 @@ footer
 	transition opacity 1s
 	-webkit-transition opacity 1s
 
-#triangle
-	width 0
-	border-top 12px solid transparent
-	border-right 12px solid transparent
-	border-bottom 12px solid #3399cc
-	border-left 12px solid transparent
-	margin 0 auto
+#triangle-up
+	width 0px
+	border-top 0px solid transparent
+	border-right 100px solid transparent
+	border-bottom 50px solid #3399cc
+	border-left 100px solid transparent
+	margin 10px auto
+	top:50px
+	left:178px
+	-webkit-transform-origin left center
+	-webkit-transform-style preserve-3d
+	-webkit-transition all 0.6s ease-in-out
+	z-index 1
+	-webkit-transform: translate3d( -50px, 400px, -800px )
+	box-shadow:0px 0px 30px 10px #eee
+	opacity 0.4
 
+
+#triangle-down
+	width 0px
+	border-top 50px solid $atenea_azul
+	border-right 100px solid transparent
+	border-bottom 0px solid transparent
+	border-left 100px solid transparent
+	margin 15px auto
+	
+#triangle-down-small
+	width 0px
+	border-top 20px solid $atenea_rojo
+	border-right 40px solid transparent
+	border-bottom 0px solid transparent
+	border-left 40px solid transparent
+	margin-left  100px
+	transition opacity 5s
+	-webkit-transition opacity 5s
+	
 #login h1
 	background $atenea_rojo
 	padding 10px
@@ -245,7 +273,6 @@ footer
 	color #fff
 	width 100%
 	margin 0px
-
 	
 form
 	background #f0f0f0
@@ -278,3 +305,26 @@ form
 
 	input[type="submit"]:hover
 		background #2288bb
+		
+#benefits
+	margin 0px auto
+	padding-top 10px
+	transition opacity 3s
+	width 100%
+	-webkit-transition opacity 3s
+
+	& h1
+		background $atenea_rojo
+		padding 10px
+		font-size 140%
+		font-weight 300
+		text-align center
+		color #fff
+		width 100%
+		margin 0px
+
+#benefits-list ul
+	text-align center
+	width 100%
+	margin 0px auto	
+	display block

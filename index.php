@@ -26,6 +26,10 @@
 				$('#toggle-login').click(function(){
   					$('#login').slideToggle();
 				});
+
+				$('#toggle-benefits').click(function(){
+  					$('#benefits').slideToggle();
+				});
 			})
         </script>
         <!--LOGIN-->
@@ -54,6 +58,22 @@
 							  </form>  
 							</div>
 						<!-- //LOGIN  -->
+
+						<!--BENEFITS-->
+							<div id="benefits" style="display:none">
+							<div id="triangle-down"></div>
+							  <h1>Beneficios al suscribirse a Relax</h1>
+							  <div id="triangle-down-small"></div>
+							  	<ul class="benefits-list">
+							  		<li>La revista digital llega mensualmente a su e-mail</li>
+							  		<li>De acuerdo a su especialidad, puede recibir un suplemento extra de su especialidad</li>
+							  		<li>Encontrará novedades y noticias de la industria farmacéutica</li>
+							  		<li>Podrá consultar entrevistas a líderes de la industria farmacéutica</li>
+							  	</ul>
+
+							</div>
+							
+						<!-- //BENEFITS  -->
 		<div class="container">
 
 			<div id="logo"><h1><img src="images/Logotipo-Revista-Relax.png" alt="Revista Relax"><span>Lectura Terapéutica </span></h1></div>
@@ -77,7 +97,7 @@
 							<ul>						
 								<li id="toggle-login"><a href="#">Entrar</a></li>
 								<li><a href="registro-revista-relax.html">Registrarse</a></li>
-								<li><a href="#">¿Por qué registrarme?</a></li>
+								<li id="toggle-benefits"><a href="#">¿Por qué registrarme?</a></li>
 							</ul>
 													
 
