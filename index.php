@@ -17,6 +17,7 @@
 
         <!--//STYLE//-->
         <link rel="stylesheet" href="css/intro.css?<?php echo time();?>"/>
+        <link rel="stylesheet" href="registro.css?<?php echo time();?>"/>
         <!--<link rel="stylesheet" type="text/css" href=".css" media="all and (min-width: 400px) and (max-width: 800px)" />
 -->
       <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -29,6 +30,10 @@
 
 				$('#toggle-benefits').click(function(){
   					$('#benefits').slideToggle();
+				});
+
+				$('#toggle-registro').click(function(){
+  					$('#registro').slideToggle();
 				});
 			})
         </script>
@@ -47,8 +52,9 @@
 		</div>
 						<!--LOGIN-->
 							<div id="login" style="display:none">
-							  <div id="triangle"></div>
+							  <div id="triangle-down"></div>
 							  <h1>Por favor ingrese sus claves de suscripción</h1>
+							   <div id="triangle-down-small" class="center"></div>
 							  <form>
 							    <input type="email" placeholder="Email" autofocus tabindex="1" />
 							    <input type="password" placeholder="Contraseña"  tabindex="2"/>
@@ -63,7 +69,7 @@
 							<div id="benefits" style="display:none">
 							<div id="triangle-down"></div>
 							  <h1>Beneficios al suscribirse a Relax</h1>
-							  <div id="triangle-down-small"></div>
+							  <div id="triangle-down-small" class="left" ></div>
 							  	<ul class="benefits-list">
 							  		<li>La revista digital llega mensualmente a su e-mail</li>
 							  		<li>De acuerdo a su especialidad, puede recibir un suplemento extra de su especialidad</li>
@@ -74,6 +80,18 @@
 							</div>
 							
 						<!-- //BENEFITS  -->
+
+
+						<!--REGISTRO-->
+							<div id="registro" style="display:none">
+							<div id="triangle-down"></div>
+							  <h1>Suscribirse a Relax</h1>
+							  <div id="triangle-down-small" class="right" ></div>
+								<?php include("registro.php");  ?>
+							</div>
+							
+						<!-- //REGISTRO  -->
+						
 		<div class="container">
 
 			<div id="logo"><h1><img src="images/Logotipo-Revista-Relax.png" alt="Revista Relax"><span>Lectura Terapéutica </span></h1></div>
@@ -96,7 +114,7 @@
 							<p>Acceso Suscriptores</p>
 							<ul>						
 								<li id="toggle-login"><a href="#">Entrar</a></li>
-								<li><a href="registro-revista-relax.html">Registrarse</a></li>
+								<li id="toggle-registro"><a href="#">Registrarse</a></li>
 								<li id="toggle-benefits"><a href="#">¿Por qué registrarme?</a></li>
 							</ul>
 													

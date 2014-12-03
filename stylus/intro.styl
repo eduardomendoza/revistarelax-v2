@@ -13,7 +13,7 @@ $atenea_gris = #d1d1d1
 	color white
 
 body
-	background #fff url(../images/pattern.png) repeat top left
+	background #fff url('../images/pattern.png') repeat top left
 	/*font-family 'Open Sans', Arial, Helvetice Neue, sans-serif*/
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
 	font-size 16px
@@ -36,7 +36,7 @@ body
 	font-size .8rem
 	background-color $atenea_azul
 	opacity 0.9
-	z-index 200
+	z-index 100
 	
 .header 
 	& a
@@ -253,6 +253,7 @@ footer
 	border-bottom 0px solid transparent
 	border-left 100px solid transparent
 	margin 15px auto
+
 	
 #triangle-down-small
 	width 0px
@@ -260,10 +261,18 @@ footer
 	border-right 40px solid transparent
 	border-bottom 0px solid transparent
 	border-left 40px solid transparent
-	margin-left  100px
 	transition opacity 5s
 	-webkit-transition opacity 5s
 	
+.left
+	margin-left 100px
+	
+.center
+	margin 0px auto !important
+
+.right
+	margin-left 80% !important
+		
 #login h1
 	background $atenea_rojo
 	padding 10px
@@ -306,7 +315,7 @@ form
 	input[type="submit"]:hover
 		background #2288bb
 		
-#benefits
+#benefits, #registro
 	margin 0px auto
 	padding-top 10px
 	transition opacity 3s
@@ -328,3 +337,5 @@ form
 	width 100%
 	margin 0px auto	
 	display block
+	
+	
