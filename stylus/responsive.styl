@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px)
+@media only screen and (min-width : 320px) and (max-width : 680px)
 	body
 		margin 5px
 	.header 
@@ -7,6 +7,11 @@
 		
 		& span.right_ab
 			display none
+			
+	#logo
+		& span
+			font-size 12px !important 
+			margin -10px 70px !important
 
 	.va-wrapper
 		width 400px 
@@ -15,10 +20,21 @@
 		overflow hidden
 		
 	.va-title
-		font-size 16px !important
-		margin-left 0px !important
-		text-align right !important
+		font-size 14px !important
+		margin-left 110px !important
+		text-align left !important
+		float left
+		
+	.va-content
+		margin-left 100px !important
+		width 300px !important
 	
+	  	
+
+	& ul li 
+		margin 10px 10px !important
+
+
 	footer 
 		text-align center
 		Vertical-align center
@@ -29,3 +45,10 @@
 		
 		& .cpy, & .date
 			font-size .7rem !important
+		
+
+@media only screen and (min-width : 480px) and (max-width : 680px)
+	.va-title
+		font-size 16px !important
+		margin-left 300px !important
+		float left
