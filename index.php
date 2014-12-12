@@ -17,9 +17,11 @@
 
         <!--//STYLE//-->
         <link rel="stylesheet" href="css/intro.css?<?php echo time();?>"/>
-        <link rel="stylesheet" href="registro.css?<?php echo time();?>"/>
         <!--<link rel="stylesheet" type="text/css" href=".css" media="all and (min-width: 400px) and (max-width: 800px)" />
 -->
+
+
+
       <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
       <!--LOGIN-->
         <script type="text/javascript">
@@ -35,6 +37,10 @@
 				$('#toggle-registro').click(function(){
   					$('#registro').slideToggle();
 				});
+
+				$('#toggle-registro-fast').click(function(){
+  					$('#registro').slideToggle();
+				});
 			})
         </script>
         <!--LOGIN-->
@@ -47,19 +53,26 @@
 				<span>Una Publicación más de Atenea Pharma</span>
 			</a>
 			<span class="right_ab">
-				Para continuar, es necesario<strong><a href="#">Registrarse</a></strong>El Médico Profesionista podrá consultar información exclusiva sobre eventos, congresos y entrevistas.
+				Para continuar, es necesario <strong><a id="toggle-registro-fast" href="#">Registrarse</a></strong> El Médico Profesionista podrá consultar información exclusiva sobre eventos, congresos y entrevistas.
 			</span>
 		</div>
 						<!--LOGIN-->
 							<div id="login" style="display:none">
-							  <div id="triangle-down"></div>
+							  <!--<div id="triangle-down"></div>-->
 							  <h1>Por favor ingrese sus claves de suscripción</h1>
 							   <div id="triangle-down-small" class="center"></div>
-							  <form>
-							    <input type="email" placeholder="Email" autofocus tabindex="1" />
-							    <input type="password" placeholder="Contraseña"  tabindex="2"/>
-							    <span class="button"><a href="#">Entrar</a></span>
-							    <!--<input type="submit" value="Log in" />-->
+							 	 <form class="login" action="ateneasys/login.php" method="post" enctype="multipart/form-data" name="formulario">
+ 									<input type="hidden" name="action"  value="checkdata"/>
+
+
+							    <input type="text" name="username" id="username" placeholder="Usuario" autofocus tabindex="1" 
+								 style="text-transform::lowercase;" onKeyUp="javascript:this.value=this.value.toLowerCase();" onfocus="restaurar()"/>
+							    <input type="password" name="password" id="password" placeholder="Contraseña"  tabindex="2"
+							    style="text-transform::lowercase;" onKeyUp="javascript:this.value=this.value.toLowerCase();" onfocus="restaurar()"/>
+							    
+							    <input type="submit" class="button" value="Entrar" tabindex="3" />
+							    <!--<span class="button" type="submit">Entrar</span>
+							    <input type="submit" value="Log in" />-->
 
 							  </form>  
 							</div>
@@ -67,14 +80,15 @@
 
 						<!--BENEFITS-->
 							<div id="benefits" style="display:none">
-							<div id="triangle-down"></div>
+							<!--<div id="triangle-down"></div>-->
 							  <h1>Beneficios al suscribirse a Relax</h1>
-							  <div id="triangle-down-small" class="left" ></div>
+							  <div id="triangle-down-small" class="center" ></div>
 							  	<ul class="benefits-list">
-							  		<li>La revista digital llega mensualmente a su e-mail</li>
-							  		<li>De acuerdo a su especialidad, puede recibir un suplemento extra de su especialidad</li>
-							  		<li>Encontrará novedades y noticias de la industria farmacéutica</li>
-							  		<li>Podrá consultar entrevistas a líderes de la industria farmacéutica</li>
+							  		<li>La suscripción es totalmente gratuita para el médico especialista.</li>
+							  		<li>La revista digital llega mensualmente a su e-mail.</li>
+							  		<li>De acuerdo a su especialidad, puede recibir un suplemento extra de su especialidad.</li>
+							  		<li>Encontrará novedades y noticias de la industria farmacéutica.</li>
+							  		<li>Podrá consultar entrevistas a líderes de la industria farmacéutica.</li>
 							  	</ul>
 
 							</div>
@@ -84,10 +98,10 @@
 
 						<!--REGISTRO-->
 							<div id="registro" style="display:none">
-							<div id="triangle-down"></div>
+							<!--<div id="triangle-down"></div>-->
 							  <h1>Suscribirse a Relax</h1>
-							  <div id="triangle-down-small" class="right" ></div>
-								<?php include("registro.php");  ?>
+							  <div id="triangle-down-small" class="center" ></div>
+								<?php include("registro/index.php");  ?>
 							</div>
 							
 						<!-- //REGISTRO  -->
@@ -128,7 +142,7 @@
 						<div class="va-content">
 							<p>Acceso Público</p>
 							<ul>
-								<li><a href="#">Entrar</a></li>
+								<li><a href="v2/suscriptores">Entrar</a></li>
 							</ul>
 						</div>	
 					</div>			
